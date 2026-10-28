@@ -16,6 +16,6 @@
 </main>
 </body>
 <footer class="container text-center mt-5">
-    <p>&copy; 2026 Doro</p>
+    <p>&copy; 2026 Stef</p>
 </footer>
 </html>
