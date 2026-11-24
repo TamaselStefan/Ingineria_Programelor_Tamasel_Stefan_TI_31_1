@@ -2,14 +2,14 @@ package com.parking.parkinglot.entities;
 
 import jakarta.persistence.*;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
 public class User {
     @OneToMany(mappedBy = "owner", orphanRemoval = true)
-    private Set<Car> scar = new LinkedHashSet<>();
+    private List<Car> cars = new ArrayList<>();
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -33,12 +33,12 @@ public class User {
     @Column(name = "username")
     private String username;
 
-    public Set<Car> getScar() {
-        return scar;
+    public List<Car> getCars() {
+        return cars;
     }
 
-    public void setScar(Set<Car> scar) {
-        this.scar = scar;
+    public void setCars(List<Car> cars) {
+        this.cars = cars;
     }
 
     public String getPassword() {

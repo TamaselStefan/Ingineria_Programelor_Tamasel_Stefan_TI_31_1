@@ -1,5 +1,4 @@
-\Lab_Dorobaniu_SP>
-<%@ tag description="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ tag description="base page template" pageEncoding="UTF-8" %>
 <%@attribute name="pageTitle"%>
 <!DOCTYPE html>
 <html>
@@ -14,8 +13,7 @@
 <main class="container-fluid mt-5">
 <jsp:doBody/>
 </main>
+<jsp:include page="/WEB-INF/pages/footer.jsp" />
+<script src="${pageContext.request.contextPath}/scripts/form-validation.js"></script>
 </body>
-<footer class="container text-center mt-5">
-    <p>&copy; 2026 Stef</p>
-</footer>
 </html>

@@ -21,12 +21,11 @@ public class CarDto
         return parkingSpot;
     }
 
-    public void setParkingSpot(String parkingSpot) {
-        this.parkingSpot = parkingSpot;
-    }
-
     public String getLicensePlate() {
         return licensePlate;
+    }
 
+    public String getOwnerName() {
+        return ownerName;
     }
 }
